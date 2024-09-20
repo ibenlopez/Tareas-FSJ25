@@ -1,0 +1,194 @@
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.header .navbar {
+    height: 8vh;
+    width: 100%;
+}
+
+.header .navbar .container-fluid .project-name {
+    width: 100%;
+}
+
+.header .navbar .container-fluid .project-name .navbar-brand {
+    white-space: normal;
+    cursor: pointer;
+}
+
+.container .encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    text-align: center;
+}
+
+.container .encabezado .objetivo {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.container .encabezado .indicaciones {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.container .encabezado a {
+    margin-top: 2rem;
+}
+
+.container .ejercicio {
+    height: 92vh;
+    padding-top: 12vh;
+}
+
+.container .ejercicio .form-notas {
+    width: 50%;
+}
+
+.container .ejercicio .resultado-notas {
+    margin-top: 1rem;
+}
+
+.container .ejercicio .table-categorias {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    width: 25%;
+}
+
+.container .ejercicio .table-categorias tr th,
+.container .ejercicio .table-categorias tr td {
+    border: 1px solid black;
+    padding: .3rem;
+}
+
+.container .ejercicio .table-categorias tr th {
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+}
+
+.container .ejercicio #table-alumnos tbody .acciones-row .delete-alumno {
+    border: none;
+    border-radius: .2rem;
+    background: red;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+}
+
+.container .navegacion-entre-ejercicios .btn-ejercicio-anterior,
+.container .navegacion-entre-ejercicios .btn-ejercicio-siguiente {
+    position: fixed;
+    right: 1rem;
+    color: white;
+    border: none;
+    padding: .5rem .5rem;
+    border-radius: 100%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 3rem;
+    height: 3rem;
+}
+
+.container .navegacion-entre-ejercicios .btn-ejercicio-anterior {
+    bottom: 5rem;
+    background-color: #008069;
+}
+
+.container .navegacion-entre-ejercicios .btn-ejercicio-siguiente {
+    bottom: 1rem;
+    background-color: #008069;
+}
+
+.container .navegacion-entre-ejercicios .btn-ejercicio-anterior:hover,
+.container .navegacion-entre-ejercicios .btn-ejercicio-siguiente:hover {
+    background-color: #35a893;
+}
+
+.container .navegacion-entre-ejercicios .btn-ejercicio-siguiente::after {
+    content: "Ejercicio siguiente";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #444;
+    color: white;
+    padding: 5px 10px;
+    white-space: nowrap;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.container .navegacion-entre-ejercicios .btn-ejercicio-anterior::after {
+    content: "Ejercicio anterior";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #444;
+    color: white;
+    padding: 5px 10px;
+    white-space: nowrap;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.container .navegacion-entre-ejercicios .btn-ejercicio-siguiente:hover::after,
+.container .navegacion-entre-ejercicios .btn-ejercicio-anterior:hover::after {
+    right: 120%;
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .header .navbar {
+        height: 10vh;
+        width: 100%;
+    }
+
+    .header .navbar .container-fluid .project-name .navbar-brand {
+        font-size: medium;
+    }
+
+    .container .encabezado {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+        text-align: center;
+    }
+
+    .container .encabezado h1 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .container .encabezado .objetivo {
+        font-size: .8rem;
+        margin-top: 1rem;
+    }
+
+    .container .encabezado .indicaciones {
+        font-size: .8rem;
+        margin-top: 2rem;
+    }
+
+    .container .ejercicio {
+        height: 85vh;
+        padding-top: 18vh;
+        margin-bottom: 5rem;
+    }
+}
