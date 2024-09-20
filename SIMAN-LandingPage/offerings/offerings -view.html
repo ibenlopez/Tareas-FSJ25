@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/x-icon" href="../assets/images/icon_siman.png">
+   <!--=============== GOOGLE ICONS ===============-->
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="./offerings-styles.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+   <title>siman.com</title>
+</head>
+
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav">
+         <!-- <a href="#" class="nav__logo">SIMAN</a> -->
+         <img src="../assets/images/siman_logo.svg" alt="Siman logo" class="nav__logo" id="nav-logo">
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a class="nav__link" onclick="navTo('shoes-section')">Calzado</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" onclick="navTo('clothing-section')">Ropa</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" onclick="navTo('sport-section')">Deporte</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" onclick="navTo('home-section')">Hogar</a>
+               </li>
+            </ul>
+
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <span class="material-symbols-outlined" id="nav-close">
+                  close
+               </span>
+            </div>
+         </div>
+
+         <div class="nav__actions">
+            <!-- Login button -->
+            <span class="material-symbols-outlined nav__login" id="login-btn">
+               person
+            </span>
+            <span class="material-symbols-outlined nav__suscribe" id="suscribe-btn">
+               notifications
+            </span>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <span class="material-symbols-outlined">
+                  menu
+               </span>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== SEARCH ====================-->
+   <div class="search" id="search">
+      <form action="" class="search__form">
+         <span class="material-symbols-outlined search__icon">
+            search
+         </span>
+         <input type="search" placeholder="¿Que estas buscando?" class="search__input">
+      </form>
+      <span class="material-symbols-outlined search__close" id="search-close">
+         close
+      </span>
+   </div>
+
+   <!--==================== LOGIN ====================-->
+   <div class="login" id="login">
+      <form action="" class="login__form">
+         <h2 class="login__title">Iniciar sesión</h2>
+
+         <div class="login__group">
+            <div>
+               <label for="email" class="login__label">Correo</label>
+               <input type="email" placeholder="Correo electrónico" id="email" class="login__input">
+            </div>
+
+            <div>
+               <label for="password" class="login__label">Contraseña</label>
+               <input type="password" placeholder="Escribe tu contraseña" id="password" class="login__input">
+            </div>
+         </div>
+
+         <div>
+            <p class="login__signup">
+               ¿Aún no tienes una cuenta? <a href="#">Registrate</a>
+            </p>
+
+            <a href="#" class="login__forgot">
+               ¿Olvidaste tu contraseña?
+            </a>
+
+            <button type="submit" class="login__button">Inciar Sesión</button>
+         </div>
+      </form>
+
+      <span class="material-symbols-outlined login__close" id="login-close">
+         close
+      </span>
+   </div>
+
+   <!--==================== SUSCRIBE ====================-->
+   <div class="suscribe show-suscribe" id="suscribe">
+      <form action="" class="suscribe__form">
+         <h2 class="suscribe__title">Recibir notificaciones</h2>
+         <p class="suscribe__description">Sé el primero en recibir promociones exclusivas, novedades y descuentos
+            especiales directamente en tu
+            correo. ¡Únete a nuestra comunidad y disfruta de beneficios únicos!</p>
+         <div class="suscribe__group">
+            <div>
+               <label for="email" class="suscribe__label">Correo</label>
+               <input type="email" placeholder="Correo electrónico" id="email" class="suscribe__input">
+            </div>
+         </div>
+
+         <div>
+            <button type="submit" class="suscribe__button">Suscribirme</button>
+            <a href="#" class="suscribe__remember_later" id="remember-later">Recordarme más tarde</a>
+         </div>
+      </form>
+
+      <span class="material-symbols-outlined suscribe__close" id="suscribe-close">
+         close
+      </span>
+   </div>
+
+   <!--==================== MAIN ====================-->
+   <main class="main" id="main">
+      <section class="welcome">
+         <img src="../assets/images/welcome-img.jpg" alt="" class="welcome__img">
+         <div class="welcome__text">
+            <h1>LAS MEJORES OFERTAS PARA TI</h1>
+            <h2>Disponibles solo en siman.com</h2>
+            <button class="welcome__btn" id="welcome-btn">Ver más</button>
+         </div>
+      </section>
+      <!--==================== CATEGORIES ====================-->
+      <div class="categories__container" id="categories-container">
+         <section class="shoes" id="shoes-section">
+            <section class="shoes__img__container">
+               <img src="../assets/images/shoes.jpg" alt="Calzado">
+            </section>
+            <div class="shoes__text">
+               <h2>CALZADO</h2>
+               <p>Explora nuestra colección de calzado para hombres, mujeres y niños. Desde zapatillas deportivas hasta
+                  elegantes zapatos formales, combinamos estilo, comodidad y calidad en cada paso.</p>
+                  <a href="../products/products-view.html?shoes">
+                     <button>Explorar <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                     </span></button>
+                  </a>
+            </div>
+         </section>
+         <section class="clothing" id="clothing-section">
+            <section class="clothing__img__container">
+               <img src="../assets/images/clothing.jpg" alt="Ropa">
+            </section>
+            <div class="clothing__text">
+               <h2>ROPA</h2>
+               <p>Explora nuestra colección de ropa para cada ocasión. Desde atuendos casuales hasta conjuntos
+                  elegantes,
+                  ofrecemos estilo, confort y calidad para todas las temporadas y tendencias.</p>
+                  <a href="../products/products-view.html?clothing">
+                     <button>Explorar <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                     </span></button>
+                  </a>
+            </div>
+         </section>
+         <section class="sport" id="sport-section">
+            <section class="sport__img__container">
+               <img src="../assets/images/sport.jpg" alt="Ropa">
+            </section>
+            <div class="sport__text">
+               <h2>DEPORTE</h2>
+               <p>
+                  Descubre nuestra selección de productos deportivos para todos los niveles. Equipamiento, ropa y
+                  accesorios diseñados para mejorar tu rendimiento, con la mejor calidad y tecnología avanzada.</p>
+                  <a href="../products/products-view.html?sport">
+                     <button>Explorar <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                     </span></button>
+                  </a>
+            </div>
+         </section>
+         <section class="home" id="home-section">
+            <section class="home__img__container">
+               <img src="../assets/images/home.jpg" alt="Hogar">
+            </section>
+            <div class="home__text">
+               <h2>HOGAR</h2>
+               <p>
+                  Renueva tu hogar con nuestra selección de muebles y decoración. Encuentra desde piezas funcionales
+                  hasta
+                  detalles elegantes que aportan estilo, confort y personalidad a cada espacio.</p>
+                  <a href="../products/products-view.html?home">
+                     <button>Explorar <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                     </span></button>
+                  </a>
+            </div>
+         </section>
+      </div>
+   </main>
+
+   <footer>
+      <section class="footer__container">
+         <div class="footer__branding">
+            <img src="../assets/images/siman_logo_footer.svg" alt="Siman Logo" class="footer__logo">
+            <p>
+               La mejor experiencia en cada visita
+            </p>
+         </div>
+
+         <div class="footer__links">
+            <article>
+               <h4>Siman Corporativo</h4>
+               <nav>
+                  <ul>
+                     <li><a href="#">Quiénes Somos</a></li>
+                     <li><a href="#">Visión y Misión</a></li>
+                     <li><a href="#">Historia</a></li>
+                     <li><a href="#">Sucursales</a></li>
+                     <li><a href="#">Servicios</a></li>
+                  </ul>
+               </nav>
+            </article>
+
+            <article>
+               <h4>Programas</h4>
+               <nav>
+                  <ul>
+                     <li><a href="#">Monedero</a></li>
+                     <li><a href="#">Certificados de Regalo</a></li>
+                     <li><a href="#">Garantías</a></li>
+                     <li><a href="#">Siman PRO</a></li>
+                     <li><a href="#">Credisiman</a></li>
+                     <li><a href="#">Marketplace</a></li>
+                     <li><a href="#">Vende en Marketplace</a></li>
+                  </ul>
+               </nav>
+            </article>
+
+            <article>
+               <h4>Servicio al Cliente</h4>
+               <nav>
+                  <ul>
+                     <li><a href="#">Preguntas Frecuentes</a></li>
+                     <li><a href="#">Política de devoluciones</a></li>
+                     <li><a href="#">Contáctenos</a></li>
+                     <li><a href="#">Seguridad del sitio</a></li>
+                     <li><a href="#">Política de Privacidad</a></li>
+                     <li><a href="#">Condiciones ofertas</a></li>
+                     <li><a href="#">Derecho de Retracto</a></li>
+                     <li><a href="#">Condiciones de uso</a></li>
+                     <li><a href="#">Términos y condiciones</a></li>
+                  </ul>
+               </nav>
+            </article>
+         </div>
+      </section>
+
+      <section class="footer__bottom">
+         <small>Copyright &copy; 2024 2024 Almacenes Siman El Salvador. Reservados todos los derechos.</small>
+      </section>
+   </footer>
+
+   <!--=============== JS ===============-->
+   <script src="./offerings.js"></script>
+</body>
+
+</html>
