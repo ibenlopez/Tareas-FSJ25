@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POO en TypeScript</title>
+</head>
+
+<body>
+  <header id="cabecera">
+    <h1>Guia de POO con TypeScript</h1>
+  </header>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+<section class="ejercicio" id="ejecicio-1">
+  <h2>Ejercicio 1</h2>
+  <label for="selectAlineacion">Seleccionar alineación:</label>
+  <select name="" id="selectAlineacion">
+    <option value="left">Izquierda</option>
+    <option value="center">Centrado</option>
+    <option value="right">Derecha</option>
+  </select>
+  <button id="ver-propiedades-ejercicio-1">Ver propiedades</button>
+  <div id="propiedades-ejecicio-1"></div>
+</section>
+
+<section class="ejercicio" id="ejecicio-2">
+  <h2>Ejercicio 2</h2>
+  <form>
+    <section class="selectContainer">
+      <label for="selectTipoOperacion">Seleccionar tipo de operación:</label>
+      <select name="" id="selectTipoOperacion">
+        <option value="sumar">Suma</option>
+        <option value="restar">Resta</option>
+        <option value="multiplicar">Multiplicación</option>
+        <option value="dividir">División</option>
+        <option value="potencia">Potencia</option>
+        <option value="factorial">Factorial</option>
+      </select>
+    </section>
+    <br>
+    <section class="inputsContainer">
+      <label for="inputPrimerValor" id="txtPrimerValor">Primer valor:</label>
+      <input type="number" id="inputPrimerValor">
+      <br>
+      <br>
+      <label for="inputSegundoValor" id="txtSegundoValor">Segundo valor:</label>
+      <input type="number" id="inputSegundoValor">
+    </section>
+    <br>
+    <button id="btn-calcular-operaciones" type="button">Calcular</button>
+    <label for="inputSegundoValor">Resultado:</label>
+    <input type="number" id="inputResultado" disabled>
+  </form>
+</section>
+
+<section class="ejercicio" id="ejecicio-3">
+  <h2>Ejercicio 3</h2>
+  <form>
+    <section class="inputsContainer">
+      <label for="inputTituloCancion">Titulo:</label>
+      <input type="text" id="inputTituloCancion" disabled value="SICKO MODE">
+      <label for="inputGeneroCancion">Genero:</label>
+      <input type="text" id="inputGeneroCancion" disabled value="Hip-Hop">
+      <label for="inputAutorCancion">Autor:</label>
+      <input type="text" id="inputAutorCancion">
+    </section>
+    <button id="btn-ver-cancion" type="button">Ver datos</button>
+    <div id="datos-de-cancion"></div>
+  </form>
+</section>
+<section class="ejercicio" id="ejecicio-4">
+  <h2>Ejercicio 4</h2>
+  <form>
+    <section class="accionesDeCuenta">
+      <label for="selectAccionesDeCuenta">Acciones de cuenta:</label>
+      <select name="" id="selectAccionesDeCuenta">
+        <option value="depositar">Depositar</option>
+        <option value="retirar">Retirar</option>
+      </select>
+      <label for="inputMonto" id="txtMonto">Monto:</label>
+      <input type="number" id="inputMonto" disabled>
+      <button id="btn-ejecutar-accion" type="button">Ejecutar Acción</button>
+    </section>
+    <p id="resultadoAccion"></p>
+    <button id="btn-ver-cuenta" type="button">Ver datos</button>
+    <div id="datos-de-cuenta"></div>
+  </form>
+</section>
+<section class="ejercicio" id="ejecicio-5"></section>
+<h2>Ejercicio 5</h2>
+<form>
+  <section class="accionesDePersona">
+    <div class="accionPersona">
+      <button id="btn-validar-edad" type="button">Validar edad</button>
+      <p id="resultado-validacion-edad"></p>
+    </div>
+    <div class="accionPersona">
+      <button id="btn-ver-datos-personales" type="button">Ve datos personales</button>
+      <div id="datos-personales"></div>
+    </div>
+    <div class="accionPersona">
+      <input type="number" id="sueldo-empleado">
+      <button id="btn-asignar-sueldo" type="button">Asignar nuevo sueldo</button>
+      <p id="resultado-cargar-sueldo"></p>
+    </div>
+    <div class="accionPersona">
+      <button id="btn-ver-sueldo" type="button">Ver sueldo</button>
+      <p id="resultado-sueldo"></p>
+    </div>
+    <div class="accionPersona">
+      <button id="btn-ver-datos-de-empleado" type="button">Ver datos de empleado</button>
+      <div id="datos-de-empleado"></div>
+    </div>
+  </section>
+</form>
+</section>
+
+</html>

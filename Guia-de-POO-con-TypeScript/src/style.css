@@ -1,0 +1,40 @@
+header {
+    color: green;
+    font-family: Arial, sans-serif;
+    font-size: small;
+    text-align: left;
+}
+
+#ejecicio-1,
+#datos-de-cancion,
+#datos-de-cuenta {
+    line-height: 1.5;
+}
+
+#propiedades-ejecicio-1 {
+    display: grid;
+    width: 15rem;
+}
+
+#propiedades-ejecicio-1 span {
+    display: flex;
+    justify-content: space-between;
+}
+
+#propiedades-ejecicio-1 span div {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+}
+
+#datos-de-cancion span,
+#datos-de-cuenta span,
+#datos-personales span,
+#datos-de-empleado span{
+    display: flex;
+    justify-content: space-between;
+}
+
+.accionesDePersona button {
+    margin-bottom: 1rem;
+}
