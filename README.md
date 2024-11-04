@@ -9,3 +9,5 @@ Puedes ver las demo de los proyectos desde los siguientes enlaces. 😄
 🔗: [Guía de POO con TypeScript](https://poo-en-typescript.netlify.app/)
 
 🔗: [SPA - Kodigo Music](https://musica-kodigo.netlify.app/)
+
+🔗: [SPA - To do list](https://to-do-list-spa.netlify.app/)
